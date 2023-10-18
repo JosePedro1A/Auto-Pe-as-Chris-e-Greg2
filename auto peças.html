@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QBHRXhpZgAASUkqAAgAAAACAA4BAgAQAAAAJgAAAJiCAgAJAAAANgAAAAAAAAB3aGl0ZSBiYWNrZ2VvdW5kU3Jpc2Frb3Ju/+0AXlBob3Rvc2hvcCAzLjAAOEJJTQQEAAAAAABCHAJQAAlTcmlzYWtvcm4cAngAEHdoaXRlIGJhY2tnZW91bmQcAnQACVNyaXNha29ybhwCbgAMR2V0dHkgSW1hZ2Vz/+EFHGh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8APD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+Cgk8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgoJCTxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6SXB0YzR4bXBDb3JlPSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wQ29yZS8xLjAveG1sbnMvIiAgIHhtbG5zOkdldHR5SW1hZ2VzR0lGVD0iaHR0cDovL3htcC5nZXR0eWltYWdlcy5jb20vZ2lmdC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBsdXM9Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iICB4bWxuczppcHRjRXh0PSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wRXh0LzIwMDgtMDItMjkvIiB4bWxuczp4bXBSaWdodHM9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9yaWdodHMvIiBkYzpSaWdodHM9IlNyaXNha29ybiIgcGhvdG9zaG9wOkNyZWRpdD0iR2V0dHkgSW1hZ2VzIiBHZXR0eUltYWdlc0dJRlQ6QXNzZXRJRD0iNDgwMzc4NDg0IiB4bXBSaWdodHM6V2ViU3RhdGVtZW50PSJodHRwczovL3d3dy5nZXR0eWltYWdlcy5jb20vZXVsYT91dG1fbWVkaXVtPW9yZ2FuaWMmYW1wO3V0bV9zb3VyY2U9Z29vZ2xlJmFtcDt1dG1fY2FtcGFpZ249aXB0Y3VybCIgPgo8ZGM6Y3JlYXRvcj48cmRmOlNlcT48cmRmOmxpPlNyaXNha29ybjwvcmRmOmxpPjwvcmRmOlNlcT48L2RjOmNyZWF0b3I+PGRjOmRlc2NyaXB0aW9uPjxyZGY6QWx0PjxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+d2hpdGUgYmFja2dlb3VuZDwvcmRmOmxpPjwvcmRmOkFsdD48L2RjOmRlc2NyaXB0aW9uPgo8cGx1czpMaWNlbnNvcj48cmRmOlNlcT48cmRmOmxpIHJkZjpwYXJzZVR5cGU9J1Jlc291cmNlJz48cGx1czpMaWNlbnNvclVSTD5odHRwczovL3d3dy5nZXR0eWltYWdlcy5jb20vZGV0YWlsLzQ4MDM3ODQ4ND91dG1fbWVkaXVtPW9yZ2FuaWMmYW1wO3V0bV9zb3VyY2U9Z29vZ2xlJmFtcDt1dG1fY2FtcGFpZ249aXB0Y3VybDwvcGx1czpMaWNlbnNvclVSTD48L3JkZjpsaT48L3JkZjpTZXE+PC9wbHVzOkxpY2Vuc29yPgoJCTwvcmRmOkRlc2NyaXB0aW9uPgoJPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KPD94cGFja2V0IGVuZD0idyI/Pgr/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIUAyAMBIgACEQEDEQH/xAAVAAEBAAAAAAAAAAAAAAAAAAAAB//EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AuIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/9k=");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #f0f0f0; 
+            margin: 0;
+            padding: 0; 
+        }
+
+        #titulo {
+            font-size: 50px; 
+            font-weight: bold; 
+            font-family: Arial, sans-serif; 
+            color: #FFFFFF; 
+            background-color: #ff0000; 
+            padding: 10px; 
+            border-bottom: 4px solid #000000;
+        }
+
+        #imagem {
+            max-width: 100%; 
+            height: 800px;
+            width: 100%;
+            display: block;
+            margin-top: 20px; 
+        }
+    </style>
+</head>
+<body>
+   
+</body>
+        </style>
+    </head>
+    <body>
+        <h1 id="titulo">Auto Peças Chris e Greg</h1>
+        <img id="imagem" src="https://lh5.googleusercontent.com/p/AF1QipO1nDs3embFGYYLDMO2NaDXo9ISBxhQ7sC5buVo=w1440-h1082-k-no">
+    </body>
+    </html>
+    </section>">
+</body>
+</html>
+</section>
+    <head>
+        <title>Produtos em Destaque</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f7f7f7;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+    
+            h1 {
+                color: #333;
+            }
+    
+            .produto {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                display: inline-block;
+                margin: 20px;
+                padding: 20px;
+                width: 250px;
+            }
+    
+            .produto img {
+                max-width: 100%;
+                height: auto;
+            }
+    
+            h2 {
+                color: #333;
+                font-size: 20px;
+                margin: 10px 0;
+            }
+    
+            p {
+                color: #666;
+                font-size: 16px;
+            }
+    
+            .preco {
+                color: #ff6600;
+                font-size: 18px;
+                font-weight: bold;
+            }
+    
+            button {
+                background-color: #ff6600;
+                border: none;
+                color: #fff;
+                border-radius: 5px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <h1>Produtos em Destaque</h1>
+    
+    <div class="produto">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_696631-MLB49474104355_032022-O.webp" alt="Produto 1">
+        <h2>Produto 1</h2>
+        <p>jogo de correia dentada de fusca + tensor.</p>
+        <p class="preco">Preço: R$ 2000,00</p>
+        <button>Comprar</button>
+    </div>
+    
+    <div class="produto">
+        <img src="data:image/jpeg;base64,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" alt="Produto 2">
+        <h2>Produto 2</h2>
+        <p>Farol de porsche 911 992 2020 .</p>
+        <p class="preco">Preço: R$ 7800,00</p>
+        <button>Comprar</button>
+    </div>
+    
+    <div class="produto">
+        <img src="https://down-br.img.susercontent.com/file/321618739bd214e96893837444f8eb52" alt="Produto 3">
+        <h2>Produto 3</h2>
+        <p>Carburador de gol quadrado 1.0.</p>
+        <p class="preco">Preço: R$ 29,99</p>
+        <button>Comprar</button>
+    </div>
+    
+    <div class="produto">
+        <img src="https://a-static.mlcdn.com.br/450x450/bomba-de-combustivel-jetta-audi-a3-golf-2-0-tsi-1k0919051db-hd/horizonteap/2374/1019f93c64646dafd765a8cf5836b55c.jpg" alt="Produto 3">
+        <h2>Produto 3</h2>
+        <p>Bomba de combustivel jetta 2.0 2014.</p>
+        <p class="preco">Preço: R$1000,00</p>
+        <button>Comprar</button>
+    </div>
+    
+    <div class="produto">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_978522-MLB43691735781_102020-O.webp" alt="Produto 3">
+        <h2>Produto 3</h2>
+        <p>Parachoque de Camaro 2015.</p>
+        <p class="preco">Preço: R$6600,00</p>
+        <button>Comprar</button>
+    </div>
+    </body>
+    </html>
+
+    <section>
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para obter mais informações:</p>
+        <p>Email: contato@autopecasstore.com</p>
+        <p>Telefone: (11) 1234-5678</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Autopeças Store. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
